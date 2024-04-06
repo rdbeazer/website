@@ -1,0 +1,250 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: url('../assets/images/background_ColorMatrix.jpg') ;
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "PT Sans Narrow", sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav, .nav-links {
+    display: flex;
+} 
+
+nav {
+    position: sticky;
+    top: 0;
+    margin-top: 30px;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "PT Sans Narrow", sans-serif;
+    background-color: rgb(121, 60, 3);
+    color: rgb(235, 203, 181);
+    height: 8vh;
+}
+
+.h-name {
+    display: flex;
+    text-align: left;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 3em;
+    color:rgb(235, 203, 181);
+}
+
+.nav-links, ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    font-size: 1rem;
+}
+
+nav a {
+    vertical-align: middle;
+    color: rgb(235, 203, 181);
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: yellow;
+    text-decoration: underline;   
+}
+
+/* nav a:visited{
+    color: rgb(172, 71, 5);
+    text-decoration: none;
+} */
+
+/* nav a:active {
+    color: rgb(172, 71, 5);
+    text-decoration: none;
+} */
+
+.logo img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.section {
+    margin: 40px;
+    padding: 20px;
+    background:rgb(235, 203, 181, 0.7);
+    border-color: rgb(241, 111, 5);
+    border-radius: 3rem;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.section p {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+}
+
+.about img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(5, 0.5fr);
+    grid-gap: 20px;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.project img {
+    width: 100%;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.project h3 {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1.5em;
+}
+
+.project h4 {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+.project p {
+    text-align: center;
+    font-size: 1em;
+}
+
+.learn-more {
+    text-align: center;
+    background-color: rgb(121, 60, 3);
+    color: rgb(235, 203, 181);
+    border-radius: 5rem;
+    text-decoration: none;
+}
+
+.learn-more a {
+    vertical-align: middle;
+    color: rgb(235, 203, 181);
+    text-decoration: none;
+    margin: 10px;
+}
+
+.learn-more a:hover {
+    color: yellow;
+    text-decoration: underline;   
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    width: 125px;
+    height: 200px;
+    border: 2px solid rgb(121, 60, 3);
+    border-radius: 1rem;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill img {
+    width: 100px;
+    height: 100px;
+}
+
+.skill {
+    font-size: 0.5em;
+}
+
+.skill h4 {
+    margin-top: 10px;
+    font-size: 2.25em;
+}
+
+.experience {
+    display: flex;
+}
+
+.experience img {
+    width: 20px;
+    height: 30px;
+}
+
+.attribution {
+    display: flex;
+    font-size: 0.5em;
+}
+
+.skillcontainer {
+    width: 125px;
+    height: 125px;
+/*     border: 2px solid rgb(121, 60, 3); */
+    align-items: center;
+    vertical-align: top;
+    border-radius: 1rem;
+}
+
+.skillimagebox {
+    width: 100px;
+    height: 100px;
+/*     border: 1px solid rgb(121, 60, 3); */
+}
+
+.skillcontainer img {
+    width: 100px;
+    height: 100px;
+}
+
+.skillcontainer h4{
+    text-align: center;
+    background-color: rgb(121, 60, 3) ;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}

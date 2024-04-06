@@ -1,0 +1,204 @@
+<html>
+<head>
+    <title>My Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .navbar a:hover {
+            color: yellow;
+        }
+
+        .section {
+            padding: 20px;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+        }
+
+        .about img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .project {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project h3 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skill {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #ccc;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .skill img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .skill h4 {
+            margin-top: 10px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1>My Portfolio</h1>
+            <div class="links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+            </div>
+        </div>
+        <div class="section" id="about">
+            <h2>About Me</h2>
+            <div class="about">
+                <img src="my_photo.jpg" alt="My Photo">
+                <div class="bio">
+                    <p>Hi, I'm John Doe, a web developer based in Idaho Falls, Idaho. I love creating websites that are responsive, user-friendly, and beautiful. I have a passion for learning new technologies and improving my skills.</p>
+                    <p>Some of the tools and frameworks that I use are HTML, CSS, JavaScript, Bootstrap, React, Node.js, Express, MongoDB, and Git.</p>
+                    <p>When I'm not coding, I enjoy reading, hiking, and playing guitar.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="projects">
+            <h2>My Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>A simple todo app that lets you add, edit, and delete tasks. Built with HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="project">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>A weather app that shows the current temperature and forecast for any city. Built with React and OpenWeather API.</p>
+                </div>
+                <div class="project">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>A blog site that allows users to create, read, update, and delete posts. Built with Node.js, Express, MongoDB, and Bootstrap.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="skills">
+            <h2>My Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <img src="html.png" alt="HTML">
+                    <h4>HTML</h4>
+                </div>
+                <div class="skill">
+                    <img src="css.png" alt="CSS">
+                    <h4>CSS</h4>
+                </div>
+                <div class="skill">
+                    <img src="javascript.png" alt="JavaScript">
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="skill">
+                    <img src="bootstrap.png" alt="Bootstrap">
+                    <h4>Bootstrap</h4>
+                </div>
+                <div class="skill">
+                    <img src="react.png" alt="React">
+                    <h4>React</h4>
+                </div>
+                <div class="skill">
+                    <img src="node.png" alt="Node.js">
+                    <h4>Node.js</h4>
+                </div>
+                <div class="skill">
+                    <img src="express.png" alt="Express">
+                    <h4>Express</h4>
+                </div>
+                <div class="skill">
+                    <img src="mongodb.png" alt="MongoDB">
+                    <h4>MongoDB</h4>
+                </div>
+                <div class="skill">
+                    <img src="git.png" alt="Git">
+                    <h4>Git</h4>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© 2024 John Doe. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
